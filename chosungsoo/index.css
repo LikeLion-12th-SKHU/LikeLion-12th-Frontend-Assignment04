@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(179, 131, 226);
+    font-size: 10rem;
+    opacity: 0.4;
+    text-align: center;
+}
+
+form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.input {
+    border: none;
+    color: #444;
+    font-size: 2rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.todos {
+    background-color: #fff;
+    padding: 0;
+    list-style-type: none;
+}
+
+.todos li {
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.todos li.completed {
+    color: #b6b6b6;
+    text-decoration: line-through;
+}
+
+p {
+    color: #b5b5b5;
+    margin: 3rem;
+}
+
+.control-current, .control-total {
+    display: flex;
+    border: 1px solid #b6b6b6;
+    border-radius : 30px;
+    padding: 10px;
+    margin: 15px;
+    justify-content:space-between;
+}
