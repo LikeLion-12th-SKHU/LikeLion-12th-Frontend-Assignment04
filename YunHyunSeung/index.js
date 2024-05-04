@@ -43,7 +43,7 @@ let completeCount = 0
                 
             })
 
-            //우클릭 시 제거시키는 todoElement.addEventListener 함수의 레퍼런스 정의
+            //우클릭 시 우클릭 기능은 하지만 메뉴바가 안나오게 함
             $todoElement.addEventListener('contextmenu', (e) => {
                 e.preventDefault()
 
