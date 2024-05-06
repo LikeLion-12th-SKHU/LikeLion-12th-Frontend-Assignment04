@@ -14,11 +14,18 @@ const completedNums = () => {
   numsDisplay.innerHTML = `${completedTodos} / ${totalTodos}`;
 };
 
+const checkInput = (todoInput) => {
+  if (todoInput === "") {
+    alert("최소 한 글자 이상 입력하세요!");
+    return false;
+  }
+  return true;
+};
+
 const addTodo = (todo) => {
   let todoInput = input.value;
 
-  if (todoInput === "") {
-    alert("최소 한 글자 이상 입력하세요!");
+  if (!checkInput(todoInput)) {
     return;
   }
 
